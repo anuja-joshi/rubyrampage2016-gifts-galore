@@ -1,0 +1,3 @@
+FEMALE = "f" 
+MALE = "m" 
+
