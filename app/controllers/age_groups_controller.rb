@@ -2,6 +2,6 @@ class AgeGroupsController < ApplicationController
 
   def index
     gender = params[:gender] || Category::FEMALE
-    @categories = Category.where(gender: gender)
+    @age_groups = AgeGroup.where(gender: gender)
   end
 end
