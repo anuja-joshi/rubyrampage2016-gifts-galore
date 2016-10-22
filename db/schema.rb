@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20161022135405) do
     t.string   "title"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "gender"
     t.string   "image"
     t.text     "description"
   end
