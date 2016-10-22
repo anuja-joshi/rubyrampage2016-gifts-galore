@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161022051142) do
+ActiveRecord::Schema.define(version: 20161022072844) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20161022051142) do
   create_table "age_groups", force: :cascade do |t|
     t.integer  "min_age"
     t.integer  "max_age"
-    t.integer  "title"
+    t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
