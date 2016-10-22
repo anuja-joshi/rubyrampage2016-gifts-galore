@@ -12,10 +12,10 @@ adults = AgeGroup.create(min_age: 20, max_age: 28, title: "Adults", gender: 'm')
 old_agers = AgeGroup.create(min_age: 29, max_age: nil, title: "Old Age", gender: 'm')
 
 
-kids_f = AgeGroup.create(min_age: 2, max_age: 12, title: "Kids", gender: 'm')
-teenagers_f = AgeGroup.create(min_age: 13, max_age: 19, title: "Teen Agers", gender: 'm')
-adults_f = AgeGroup.create(min_age: 20, max_age: 28, title: "Adults", gender: 'm')
-old_agers_f = AgeGroup.create(min_age: 29, max_age: nil, title: "Old Age", gender: 'm')
+kids_f = AgeGroup.create(min_age: 2, max_age: 12, title: "Kids", gender: 'm', image: 'kids_f.jpg')
+teenagers_f = AgeGroup.create(min_age: 13, max_age: 19, title: "Teen Agers", gender: 'm', image: 'teenager_f.jpg')
+adults_f = AgeGroup.create(min_age: 20, max_age: 28, title: "Adults", gender: 'm', image: 'adult_f.jpg')
+old_agers_f = AgeGroup.create(min_age: 29, max_age: nil, title: "Old Age", gender: 'm', image: 'old_f.jpg')
 
 Category.create(age_group_id: kids.id, gender: "m", description: "He is a kid, dressed in the cutest base ball costume with a blue cap, He has the swag needed to be the coolest of all. And when he smiles, all the girls start blushing." , name: "Sports", image_url: "category_images/kids_sports.jpg")
 

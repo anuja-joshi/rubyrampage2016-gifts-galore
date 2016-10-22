@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 20161022124629) do
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "image"
     t.string   "gender"
+    t.string   "image"
   end
 
   create_table "categories", force: :cascade do |t|
