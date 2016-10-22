@@ -1,1 +1,42 @@
-%h4 kkkkkkkkkkkk
+.box
+  %h2.text-center Boy or Girl?
+
+.div{"data-animate" => "fadeInUp"}
+  #blog-homepage.row
+    .col-sm-6
+      .post
+        .owl-item{:style => "width: 228px; margin: 0 auto;"}
+          .item{:style => "visibility: visible;"}
+            .product
+              .flip-container
+                .flipper
+                  .front
+                    %a{:href => "detail.html"}
+                      %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+                  .back
+                    %a{:href => "detail.html"}
+                      %img.img-responsive{:alt => "", :src => "img/product2_2.jpg"}/
+              %a.invisible{:href => "detail.html"}
+                %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+              .ribbon.sale
+                .theribbon GIRL
+                .ribbon-background
+
+    .col-sm-6
+      .post
+        .owl-item{:style => "width: 228px; margin: 0 auto;"}
+          .item{:style => "visibility: visible;"}
+            .product
+              .flip-container
+                .flipper
+                  .front
+                    %a{:href => "detail.html"}
+                      %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+                  .back
+                    %a{:href => "detail.html"}
+                      %img.img-responsive{:alt => "", :src => "img/product2_2.jpg"}/
+              %a.invisible{:href => "detail.html"}
+                %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+              .ribbon.new
+                .theribbon BOY
+                .ribbon-background
