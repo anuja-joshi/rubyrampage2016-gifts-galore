@@ -11,10 +11,10 @@
               .flip-container
                 .flipper
                   .front
-                    %a{:href => "detail.html"}
+                    = link_to age_groups_path(gender: 'f') do
                       %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
                   .back
-                    %a{:href => "detail.html"}
+                    = link_to age_groups_path(gender: 'f') do
                       %img.img-responsive{:alt => "", :src => "img/product2_2.jpg"}/
               %a.invisible{:href => "detail.html"}
                 %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
@@ -30,11 +30,11 @@
               .flip-container
                 .flipper
                   .front
-                    %a{:href => "detail.html"}
-                      %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+                    = link_to age_groups_path(gender: 'm') do
+                      %img.img-responsive{:alt => "", :src => "img/step1-boy0.png"}/
                   .back
-                    %a{:href => "detail.html"}
-                      %img.img-responsive{:alt => "", :src => "img/product2_2.jpg"}/
+                    = link_to age_groups_path(gender: 'm') do
+                      %img.img-responsive{:alt => "", :src => "img/step1-boy1.jpg"}/
               %a.invisible{:href => "detail.html"}
                 %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
               .ribbon.new
