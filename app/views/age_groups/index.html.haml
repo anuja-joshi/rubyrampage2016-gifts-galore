@@ -1,1 +1,30 @@
-askdjslkad
+.div{"data-animate" => "fadeInUp"}
+  .owl-wrapper
+    - @age_groups.each do |age|
+      .row
+        .col-sm-3
+          .post
+            .owl-item{:style => "width: 228px;"}
+              .item{:style => "visibility: visible;"}
+                .product
+                  .flip-container
+                    .flipper
+                      .front
+                        = link_to age_groups_path(gender: 'f') do
+                          %img.img-responsive{:alt => "", :src => "age_group/#{age.image}"}/
+                      .back
+                        = link_to age_groups_path(gender: 'f') do
+                          %img.img-responsive{:alt => "", :src => "age_group/#{age.image}"}/
+                  %a.invisible
+                    %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+        .col-sm-6
+          .post
+            %h4.purple-heading
+              #{age.title}
+            %p.intro
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+              ultricies mi vitae est. Mauris placerat eleifend leo.
+            %p.read-more
+              %a.btn.btn-primary{:href => "#"} Select
+
+

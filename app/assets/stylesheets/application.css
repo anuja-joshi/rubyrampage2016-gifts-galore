@@ -18,3 +18,7 @@
 .inline-display{
   display: inline-block;
 }
+.purple-heading{
+  color: #bd6db1;
+  font-size: 40px;
+}
