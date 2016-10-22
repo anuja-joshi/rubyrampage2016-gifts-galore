@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min.js
+//= require jquery.cookie.js
+//= require waypoints.min.js
+//= require modernizr.js
+//= require bootstrap-hover-dropdown.js
+//= require owl.carousel.min.js
+//= require front.js
 //= require turbolinks
 //= require_tree .
