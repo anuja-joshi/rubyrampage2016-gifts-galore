@@ -1,0 +1,2 @@
+class RecipentsController < ApplicationController
+end

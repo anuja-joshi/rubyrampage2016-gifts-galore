@@ -26,9 +26,10 @@
       %a.navbar-brand.home{"data-animate-hover" => "bounce", :href => "#"}
         %img.hidden-xs{:alt => "logo", :src => "img/logo.jpg"}/
         %img.visible-xs{:alt => "logo", :src => "img/logo.jpg"}/
-    %h2.inline-display Gifts Galore
+    %h2.inline-display
+      %i Gifts Galore
     %small Wrap your feeling in beautiful gestures!
-    = link_to "Expore", "#", class: 'btn btn-primary btn-lg navbar-btn pull-right'
+    = link_to "Expore", recipents_path, class: 'btn btn-primary btn-lg navbar-btn pull-right'
 
 #all
   #content
