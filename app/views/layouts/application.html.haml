@@ -9,7 +9,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
 
   %body
-    - if params[:controller] == 'gifts' && params[:action] == 'index'
+    - if params[:controller] == 'welcome' && params[:action] == 'index'
       = yield
     - else
       #navbar.navbar.navbar-default.yamm{:role => "navigation"}

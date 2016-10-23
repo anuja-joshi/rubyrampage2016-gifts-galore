@@ -1,44 +1,16 @@
-#top
-  .container
-    .col-md-6
-    .col-md-6{"data-animate" => "fadeInDown"}
-      %ul.menu
-        %li
-          %a{"data-target" => "#login-modal", "data-toggle" => "modal", :href => "#"} Take A Tour
-        %li
-          %a{:href => "#"} Inpiration
-        %li
-          %a{:href => "#"} About Us
-        %li
-          %a{:href => "#"} Contact Us
-  #login-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "Login", :role => "dialog", :tabindex => "-1"}
-    .modal-dialog.modal-sm
-      .modal-content
-        .modal-header
-          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-          %h4#Login.modal-title Coming Soon
-        .modal-body
-          %p.text-center.text-muted Thanks For your interest, we will get this up soon!
-
-#navbar.navbar.navbar-default.yamm{:role => "navigation"}
-  .container
-    .navbar-header
-      %a.navbar-brand.home{"data-animate-hover" => "bounce", :href => "#"}
-        %img.hidden-xs{:alt => "logo", :src => "img/logo.jpg"}/
-        %img.visible-xs{:alt => "logo", :src => "img/logo.jpg"}/
-    %h2.inline-display
-      %i Gifts Galore
-    %small Wrap your feeling in beautiful gestures!
-    = link_to "Expore", recipents_path, class: 'btn btn-primary btn-lg navbar-btn pull-right'
-
-#all
-  #content
-    .container{"data-animate" => "fadeInUpBig"}
-      .col-md-12
-        #main-slider
-          .item
-            %img.img-responsive{:alt => "", :src => "img/landing-img3.png"}/
-          .item
-            %img.img-responsive{:alt => "", :src => "img/landing-img1.png"}/
-          .item
-            %img.img-responsive{:alt => "", :src => "img/landing-img2.png"}/
+.box{:style=> "background-image: url(/result-background.jpg)"}
+  %h2.text-center.title-white= @message
+.div{"data-animate" => "fadeInUp"}
+  #blog-homepage.row
+    - @gifts.each do |gift|
+      .col-sm-4
+        .post
+          .owl-item{:style => "width: 228px; margin: 0 auto;"}
+            .item{:style => "visibility: visible;", "data-animate-hover" => "bounce"}
+              = image_tag "/#{gift.image.empty? ? 'default_gift_img.jpg' : gift.image}", class: 'img img-responsive'
+              %a.invisible{:href => "detail.html"}
+                %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
+              / .ribbon.sale
+              /   .theribbon GIRL
+              /   .ribbon-background
+          %h3.purple-title.text-center= gift.name
