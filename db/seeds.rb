@@ -6,13 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-kids = AgeGroup.create(min_age: 2, max_age: 12, title: "Kids", gender: 'm', image: "kids_m.jpg")
+kids = AgeGroup.create(min_age: 2, max_age: 12, title: "kids", gender: 'm', image: "kids_m.jpg")
 teenagers = AgeGroup.create(min_age: 13, max_age: 19, title: "teenagers", gender: 'm', image: "teenager_m.jpg")
 adults = AgeGroup.create(min_age: 20, max_age: 28, title: "youngsters", gender: 'm', image: "adult_m.jpg")
 old_agers = AgeGroup.create(min_age: 29, max_age: nil, title: "adults", gender: 'm', image: "old_m.jpg")
 
 
-kids_f = AgeGroup.create(min_age: 2, max_age: 12, title: "Kids", gender: 'f', image: 'kids_f.jpg')
+kids_f = AgeGroup.create(min_age: 2, max_age: 12, title: "kids", gender: 'f', image: 'kids_f.jpg')
 teenagers_f = AgeGroup.create(min_age: 13, max_age: 19, title: "teenagers", gender: 'f', image: 'teenager_f.jpg')
 adults_f = AgeGroup.create(min_age: 20, max_age: 28, title: "youngsters", gender: 'f', image: 'adult_f.jpg')
 old_agers_f = AgeGroup.create(min_age: 29, max_age: nil, title: "adults", gender: 'f', image: 'old_f.jpg')
