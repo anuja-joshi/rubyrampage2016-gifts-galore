@@ -9,20 +9,41 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
 
   %body
-    - if params[:controller] == 'welcome' && params[:action] == 'index'
-      = yield
-    - else
-      #navbar.navbar.navbar-default.yamm{:role => "navigation"}
-        .container
-          .navbar-header
-            %a.navbar-brand.home{"data-animate-hover" => "bounce", :href => "#"}
-              = image_tag "/img/logo.jpg", class: 'hidden-xs', alt: 'logo'
-              = image_tag "/img/logo.jpg", class: 'visible-xs', alt: 'logo'
-          %h2.inline-display
-            %i Gifts Galore
-          %small Wrap your feeling in beautiful gestures!
-      #all
-        #content
-          .container
-            .col-md-12
-              = yield
+    #top
+      .container
+        .col-md-6
+        .col-md-6{"data-animate" => "fadeInDown"}
+          %ul.menu
+            %li
+              %a{"data-target" => "#login-modal", "data-toggle" => "modal", :href => "#"} Take A Tour
+            %li
+              = link_to "Inpiration", inspiration_path
+            %li
+              %a{:href => "#"} About Us
+            %li
+              = link_to "Contact Us", contact_us_path
+      #login-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "Login", :role => "dialog", :tabindex => "-1"}
+        .modal-dialog.modal-sm
+          .modal-content
+            .modal-header
+              %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+              %h4#Login.modal-title Coming Soon
+            .modal-body
+              %p.text-center.text-muted Thanks For your interest, we will get this up soon!
+
+    #navbar.navbar.navbar-default.yamm{:role => "navigation"}
+      .container
+        .navbar-header
+          %a.navbar-brand.home{"data-animate-hover" => "bounce", :href => "#"}
+            = image_tag "/img/logo.jpg", class: 'hidden-xs', alt: 'logo'
+            = image_tag "/img/logo.jpg", class: 'visible-xs', alt: 'logo'
+        %h2.inline-display
+          %i Gifts Galore
+        %small Wrap your feeling in beautiful gestures!
+        - if params[:controller] == 'welcome' && params[:action] == 'index'
+          = link_to "Expore", recipents_path, class: 'btn btn-primary btn-lg navbar-btn pull-right'
+    #all
+      #content
+        .container{"data-animate" => "fadeInUpBig"}
+          .col-md-12
+            = yield
