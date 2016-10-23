@@ -9,15 +9,15 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
 
   %body
-    - if params[:controller] == 'gifts' && params[:action] == 'index'
+    - if params[:controller] == 'welcome' && params[:action] == 'index'
       = yield
     - else
       #navbar.navbar.navbar-default.yamm{:role => "navigation"}
         .container
           .navbar-header
             %a.navbar-brand.home{"data-animate-hover" => "bounce", :href => "#"}
-              %img.hidden-xs{:alt => "logo", :src => "img/logo.jpg"}/
-              %img.visible-xs{:alt => "logo", :src => "img/logo.jpg"}/
+              = image_tag "/img/logo.jpg", class: 'hidden-xs', alt: 'logo'
+              = image_tag "/img/logo.jpg", class: 'visible-xs', alt: 'logo'
           %h2.inline-display
             %i Gifts Galore
           %small Wrap your feeling in beautiful gestures!

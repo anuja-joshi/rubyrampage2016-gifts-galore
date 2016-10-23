@@ -10,10 +10,10 @@
                   .flip-container
                     .flipper
                       .front
-                        = link_to age_groups_path(gender: 'f') do
+                        = link_to age_groups_path(gender: age.gender) do
                           %img.img-responsive{:alt => "", :src => "age_group/#{age.image}"}/
                       .back
-                        = link_to age_groups_path(gender: 'f') do
+                        = link_to age_groups_path(gender: age.gender) do
                           %img.img-responsive{:alt => "", :src => "age_group/#{age.image}"}/
                   %a.invisible
                     %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
@@ -25,6 +25,4 @@
               Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
               ultricies mi vitae est. Mauris placerat eleifend leo.
             %p.read-more
-              %a.btn.btn-primary{:href => "#"} Select
-
-
+              = link_to "Select", age_group_categories_path(age.id), class: 'btn btn-primary'
