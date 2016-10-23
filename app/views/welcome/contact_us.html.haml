@@ -1,0 +1,25 @@
+#contact.box
+  %h1 Contact
+  %p.lead Are you curious about something? Do you have any suggestions for our site?
+  %p Please feel free to contact us.
+  %hr/
+  = form_tag(controller: "welcome", action: "process_message", method: "post") do
+    .row
+      .col-sm-6
+        .form-group
+          %label{:for => "firstname"} Name
+          %input#firstname.form-control{:type => "text", :required => true, :name =>"user[name]"}/
+    .row
+      .col-sm-6
+        .form-group
+          %label{:for => "email"} Email
+          %input#email.form-control{:type => "email", :required => true, :name =>"user[email]"}/
+    .row  
+      .col-sm-6
+        .form-group
+          %label{:for => "message", :required => true, :name =>"user[message]"} Message/suggestion
+          %textarea#message.form-control
+    .row
+      .col-sm-6.text-center
+        %button.btn.btn-primary{:type => "submit"}
+          Send message
