@@ -4,7 +4,7 @@
       .col-md-4
         = link_to category_gifts_path(category.id) do
           %p.text-center
-            = image_tag "/#{category.image_url.empty? ? 'default_person_img.jpg' : category.image_url}", class: 'img-rounded img-responsive'
+            = image_tag "#{category.image_url.empty? ? 'default_person_img.jpg' : category.image_url}", class: 'img-rounded img-responsive'
         .box.same-height{:style => "height: 168px;"}
           %h3
             = link_to "#{category.name}", category_gifts_path(category.id)
