@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1 "User Name: #{@user.try(:name)}"
+    %p "User Email: #{@user.try(:email)}"
+    %br/
+    %h4 Message/ suggestion: 
+    %p= @user.try(:message)

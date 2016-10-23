@@ -17,8 +17,8 @@
     .row  
       .col-sm-6
         .form-group
-          %label{:for => "message", :required => true, :name =>"user[message]"} Message/suggestion
-          %textarea#message.form-control
+          %label{:for => "message"} Message/suggestion
+          %textarea#message.form-control{:required => true, :name =>"user[message]"}
     .row
       .col-sm-6.text-center
         %button.btn.btn-primary{:type => "submit"}
