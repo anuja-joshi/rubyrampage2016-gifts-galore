@@ -20,7 +20,7 @@
         .col-sm-6
           .post
             %h4.purple-heading
-              #{age.title}
+              #{age.title.try(:titleize)}
             %p.intro= age.description
             %p.read-more
               = link_to "Select", age_group_categories_path(age.id), class: 'btn btn-primary'
