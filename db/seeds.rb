@@ -38,7 +38,7 @@ Category.create(age_group_id: kids_f.id, gender: "f", description: "She is playi
 
 Category.create(age_group_id: kids_f.id, gender: "f", description: "She want to dress like the cindrella. Shining teara and beautiful pink frock is the best combination. She is definately going to win the fancy dress competition ", name: "fashion", image_url: "https://s-media-cache-ak0.pinimg.com/236x/40/b1/ff/40b1ff4efb9189201a92ad8291c1a112.jpg")
 
-Category.create(age_group_id: kids_f.id, gender: "f", description: "She loves making necklaces and bracelets with beads. She makes it for her mom , her friends and her teacher. ",  name: "handcraft", image_url: " https://s-media-cache-ak0.pinimg.com/736x/e1/67/52/e1675228b1dd8c0fa1bbf0150a41d383.jpg")
+Category.create(age_group_id: kids_f.id, gender: "f", description: "She loves making necklaces and bracelets with beads. She makes it for her mom , her friends and her teacher. ",  name: "handcraft", image_url: "https://s-media-cache-ak0.pinimg.com/736x/e1/67/52/e1675228b1dd8c0fa1bbf0150a41d383.jpg")
 
 Category.create(age_group_id: kids_f.id, gender: "f", description: "Around the world in 80 days is her dream and his favourite book. Sipping coffee and watching the map, she targets his next destination. She loves exploring adventorous places and capturing the moments into digital negatives.",  name: "travelling and reading", image_url: "https://s-media-cache-ak0.pinimg.com/736x/e1/67/52/e1675228b1dd8c0fa1bbf0150a41d383.jpg")
 
