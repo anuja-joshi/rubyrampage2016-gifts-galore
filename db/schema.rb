@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161022135405) do
+ActiveRecord::Schema.define(version: 20161023030203) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,11 +30,12 @@ ActiveRecord::Schema.define(version: 20161022135405) do
     t.string   "question"
     t.string   "name"
     t.string   "image_url"
-    t.integer  "age_group_id"
     t.text     "description"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "gender"
+    t.integer  "age_group_id"
+    t.index ["age_group_id"], name: "index_categories_on_age_group_id", using: :btree
   end
 
   create_table "gifts", force: :cascade do |t|
@@ -42,9 +43,12 @@ ActiveRecord::Schema.define(version: 20161022135405) do
     t.string   "price"
     t.text     "note"
     t.string   "image"
-    t.integer  "category_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "category_id"
+    t.index ["category_id"], name: "index_gifts_on_category_id", using: :btree
   end
 
+  add_foreign_key "categories", "age_groups"
+  add_foreign_key "gifts", "categories"
 end
