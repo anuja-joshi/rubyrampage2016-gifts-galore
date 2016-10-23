@@ -3,8 +3,8 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   %body
-    %h1 "User Name: #{@user.try(:name)}"
-    %p "User Email: #{@user.try(:email)}"
+    %h1 "User Name: #{@user[:name]}"
+    %p "User Email: #{@user[:email]}"
     %br/
     %h4 Message/ suggestion: 
-    %p= @user.try(:message)
+    %p= @user[:message]
