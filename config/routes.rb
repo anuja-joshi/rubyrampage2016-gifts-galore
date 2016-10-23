@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'contact-us', controller: 'welcome', action: 'contact_us'
   post 'contact-us', controller: 'welcome', action: 'process_message'
   get 'inspiration', controller: 'welcome', action: 'inspiration'
+  get 'about-us', controller: 'welcome', action: 'about_us'
 
   resources :recipents, only: [:index]
 
