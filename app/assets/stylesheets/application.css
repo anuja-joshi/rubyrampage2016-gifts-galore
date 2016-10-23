@@ -31,4 +31,5 @@
 }
 .about-us-img{
   max-height: 230px;
+  min-width: 220px;
 }

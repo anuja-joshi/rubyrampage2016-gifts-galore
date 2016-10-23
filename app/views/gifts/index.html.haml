@@ -8,7 +8,7 @@
           .owl-item{:style => "width: 228px; margin: 0 auto;"}
             .item{:style => "visibility: visible;", "data-animate-hover" => "bounce"}
               = image_tag "#{gift.image.empty? ? '/default_gift_img.jpg' : gift.image}", class: 'img img-responsive'
-              %a.invisible{:href => "detail.html"}
+              %a.invisible
                 %img.img-responsive{:alt => "", :src => "img/product2.jpg"}/
               / .ribbon.sale
               /   .theribbon GIRL
