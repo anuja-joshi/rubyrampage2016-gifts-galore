@@ -61,7 +61,7 @@ Category.create(age_group_id: teenagers_f.id, gender: "f", description: "She is 
 
 Category.create(age_group_id: teenagers_f.id, gender: "f", description: "She is crazy about taylor swift. Taylor's songs are always on her lips. Are we looking at a young star?. Who knows!", name: "music and movies", image_url: "http://images.medicaldaily.com/sites/medicaldaily.com/files/styles/full_breakpoints_theme_medicaldaily_desktop_1x/public/2014/02/24/woman-happily-listening-music-headphones.jpg")
 
-Category.create(age_group_id: teenagers_f.id, gender: "f", description: "She is a big time foodie! Eating is all she loves. Whether its a Papa Jones pizza or the black current ice cream cake, be ware she will eat it all.", name: "foodie", image_url: "http://lebar.in/wp-content/uploads/2014/11/Cute-Girl-Wallpaper-Widescreen-New2.jpg")
+Category.create(age_group_id: teenagers_f.id, gender: "f", description: "She is a big time foodie! Eating is all she loves. Whether its a Papa Jones pizza or the black current ice cream cake, be ware she will eat it all.", name: "foodie", image_url: "http://focalpoint.asia/gallery/collection2/dps202chinesewoman/gallery_dps202226.jpg")
 
 Category.create(age_group_id: teenagers_f.id, gender: "f", description: "She wants to look the prettiest. She follows the latest fashion and is shopping for the box skirt that might go with her latest knee length boots", name: "fashion", image_url: "http://lebar.in/wp-content/uploads/2014/11/Cute-Girl-Wallpaper-Widescreen-New2.jpg")
 
