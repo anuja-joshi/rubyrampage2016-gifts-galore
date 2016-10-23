@@ -6,11 +6,11 @@
         %li
           %a{"data-target" => "#login-modal", "data-toggle" => "modal", :href => "#"} Take A Tour
         %li
-          %a{:href => "#"} Inpiration
+          = link_to "Inpiration", inspiration_path
         %li
           %a{:href => "#"} About Us
         %li
-          %a{:href => "#"} Contact Us
+          = link_to "Contact Us", contact_us_path
   #login-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "Login", :role => "dialog", :tabindex => "-1"}
     .modal-dialog.modal-sm
       .modal-content
