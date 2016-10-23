@@ -21,8 +21,6 @@
           .post
             %h4.purple-heading
               #{age.title}
-            %p.intro
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-              ultricies mi vitae est. Mauris placerat eleifend leo.
+            %p.intro= age.description
             %p.read-more
               = link_to "Select", age_group_categories_path(age.id), class: 'btn btn-primary'
